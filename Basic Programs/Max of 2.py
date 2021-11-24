@@ -5,4 +5,5 @@ b = int(input("Enter second number:"))
 # else:
 #     print(a)
 
+#using function
 print(max(a,b))
