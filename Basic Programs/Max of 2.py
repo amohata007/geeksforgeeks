@@ -7,3 +7,6 @@ b = int(input("Enter second number:"))
 
 #using function
 print(max(a,b))
+
+#one liner
+print(a if a >= b else b)
