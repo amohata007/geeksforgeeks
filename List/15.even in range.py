@@ -12,3 +12,7 @@ print([x for x in A if x%2==0 and (x>l and x<u)])
 
 #16-20 are same
 #skip to 21st
+
+#21
+# if lst%2==0:
+#     lst.remove(ele)
