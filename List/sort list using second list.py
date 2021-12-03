@@ -1,7 +1,7 @@
 # Python program to sort
 # one list using
 # the other list
-
+#zip builtin function
 def sort_list(list1, list2):
     zipped_pairs = zip(list2, list1)
 
