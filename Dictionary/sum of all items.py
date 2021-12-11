@@ -3,3 +3,9 @@ s = 0
 for i in d.values():
     s += i
 print(s)
+
+
+#square
+# import math
+# x = math.sqrt(25)
+# print(int(x))
