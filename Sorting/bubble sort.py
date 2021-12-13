@@ -1,3 +1,9 @@
+#Best case - O(n)  --- In case the array is already sorted
+#Average case - O(n^2)
+#Worst case - O(n^2)
+
+#Its is stable algorithm
+
 n = int(input("Enter length of list: "))
 A=[]
 for i in range(n):
