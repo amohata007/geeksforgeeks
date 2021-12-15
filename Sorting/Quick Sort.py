@@ -1,7 +1,7 @@
 #Best case - O(n(logn))
 #Average case - O(n(logn))
 #Worst case - O(n^2)
-#divide and conquer   or partition exchange sort
+#divide and conquer  or partition exchange sort
 # Unstable
 
 def pivot_place(A,first,last):
@@ -25,7 +25,6 @@ def quicksort(A,first,last):
         p = pivot_place(A,first,last)
         quicksort(A,first,p-1)
         quicksort(A,p+1,last)
-
 
 
 n = int(input("Enter length of list: "))
