@@ -14,6 +14,15 @@ class LinkedList:
         node = Node(data,self.head)
         self.head = node
 
+    def insert_at_end(self,data):
+        if self.head is None:
+            self.head = Node(data)
+            return
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = Node(data)
+
     def print_LL(self):
         temp = self.head
         st = ''
@@ -33,4 +42,12 @@ var.insert_at_beginning(10)
 var.insert_at_beginning(20)
 var.insert_at_beginning(30)
 var.insert_at_beginning(40)
+var.insert_at_end(25)
 var.print_LL()
+
+
+
+
+
+
+
