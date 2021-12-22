@@ -37,13 +37,24 @@ class LinkedList:
                 temp = temp.next
             print(st)
 
+    def count_LL(self):
+        cnt = 0
+        temp = self.head
+        while temp:
+            cnt+=1
+            temp = temp.next
+        print(cnt)
+
 var = LinkedList()
 var.insert_at_beginning(10)
 var.insert_at_beginning(20)
 var.insert_at_beginning(30)
 var.insert_at_beginning(40)
 var.insert_at_end(25)
+var.insert_at_end(100)
+var.count_LL()
 var.print_LL()
+
 
 
 
