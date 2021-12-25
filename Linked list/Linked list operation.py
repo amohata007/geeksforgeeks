@@ -23,6 +23,31 @@ class LinkedList:
             temp = temp.next
         temp.next = Node(data)
 
+    def count_LL(self):
+        cnt = 0
+        temp = self.head
+        while temp:
+            cnt+=1
+            temp = temp.next
+        return cnt
+
+    def insert_at_index(self,index,data):
+        if index < 0 or index > self.count_LL():
+            raise Exception("Invalid Index")
+        if index==0:
+            self.insert_at_beginning(data)
+            return
+        temp = self.head
+        cnt=0
+        while temp:
+            if cnt== index -1:
+                node = Node(data,temp.next)
+                temp.next = node
+                break
+            temp = temp.next
+            cnt +=1
+
+
     def print_LL(self):
         temp = self.head
         st = ''
@@ -37,13 +62,7 @@ class LinkedList:
                 temp = temp.next
             print(st)
 
-    def count_LL(self):
-        cnt = 0
-        temp = self.head
-        while temp:
-            cnt+=1
-            temp = temp.next
-        print(cnt)
+
 
 var = LinkedList()
 var.insert_at_beginning(10)
@@ -52,7 +71,9 @@ var.insert_at_beginning(30)
 var.insert_at_beginning(40)
 var.insert_at_end(25)
 var.insert_at_end(100)
-var.count_LL()
+var.insert_at_index(1,99)
+var.insert_at_index(7,11)
+print(var.count_LL())
 var.print_LL()
 
 
